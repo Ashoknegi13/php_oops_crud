@@ -33,7 +33,7 @@ $obj = new database();
  
 <div style="font-size:25px;margin-left:40%; border: 1px solid black;width:20%;height:300px;padding:30px;padding-left:60px">
 
-        <form action="save-data.php" method="POST">
+        <form action="save-data.php" method="POST" autocomplete="off">
             <lable>Name : </lable>
             <input type="text" name="sname" placeholder="username" required><br><br>
 

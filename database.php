@@ -174,8 +174,6 @@ class database{
                              echo   "<a style='text-decoration:none;font-size:20px;color:black' href=$url?page=".($page-1)."><<<</a>";
 
                             }
-
-
                             for($i=1 ; $i<=$total_pages ;$i++){
                                 echo " <a style='text-decoration:none;font-size:20px;color:black' href=$url?page=$i>$i</a>";
                             }
@@ -184,13 +182,9 @@ class database{
                                 echo    " <a style='text-decoration:none;font-size:20px;color:black' href=$url?page=".($page+1).">>>></a>";
    
                                }
-
                                
                             echo "</ul>";
 
-
-
-                            
                         }else{
                             array_push($this->result , " Pagination query failed : ".$this->mysqli->error);
                             return false;
